@@ -1,0 +1,176 @@
+:root{
+  --primary : #EAEFBD;
+  --tea-green : #C9E3AC;
+  --pista : #90BE6D;
+  --orange : #EA9010;
+  --dark-brown : #37371F;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+body {
+  background-color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app{
+  height: 100vh;
+  position: relative;
+}
+nav{
+  color: var(--orange);
+  align-items: center;
+}
+nav h1,form,form input,.priority select,.control button,table td,table th{
+  padding: 10px;
+}
+nav h1,.priority select,.control button{
+  margin: 10px;
+}
+.app,form,nav,main,table,table tr,.choice{
+  display: flex;
+}
+.app,form,nav,table{
+  flex-direction: column;
+}
+nav{
+  align-items: center;
+}
+nav h1{
+  color: var(--orange);
+  font-size: 2rem;
+}
+nav p{
+  color: var(--dark-brown);
+}
+main{
+  height: 100%;
+}
+form{
+  margin: 1rem;
+  flex: 1;
+  border-radius: 15px;
+  position: relative;
+  background-color: var(--tea-green);
+}
+form div{
+  border-radius: 5px;
+  position: relative;
+  margin: 10px 0px;
+}
+form div label{
+  position: absolute;
+  padding-left: 15px;
+  color: var(--dark-brown);
+  font-weight: 600;
+  top: 45%;
+  display: none;
+}
+form input{
+  margin: 25px 5px 10px 5px;
+  width: 96%;
+  font-size: 1rem;
+  background-color: var(--tea-green);
+  border: none;
+  border-bottom:3px solid var(--pista);
+  outline: none;
+}
+.priority{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 600;
+  color: var(--dark-brown);
+}
+.priority select{
+  background-color: var(--pista);
+  border-radius: 20px;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+  text-align: center;
+}
+.control{
+  position: absolute;
+  bottom: 0%;
+  width: 96%;
+  display: flex;
+  justify-content: space-around;
+}
+.control button{
+  background-color: var(--orange);
+  width: 100%;
+  border-radius: 25px;
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+}
+table{
+  margin:1.5rem 3rem;
+  flex: 2;
+  position: relative;
+}
+table tbody{
+  flex: 9;
+}
+table thead{
+  flex: 1;
+  margin-bottom: 20px;
+  border-radius: 15px 15px 0px 0px;
+}
+table tr{
+  justify-content: space-around;
+  align-items: center;
+}
+table td,table th{
+  background-color: var(--pista);
+  text-align: center;
+  width: 100%;
+  margin: 2px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+table td{
+  height: 50px;
+  overflow: hidden;
+}
+table td{
+  background-color: var(--tea-green);
+}
+.choice{
+  justify-content: space-around;
+  padding: 4px;
+}
+.choice button{
+  background-color: var(--orange);
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  padding: 7px;
+}
+.warn{
+  font-style: italic;
+  padding-left:10px;
+  color: red;
+}
+button:hover{
+  color: var(--primary);
+  background-color: var(--dark-brown);
+}
+.adj{
+  height: 90%;
+  border: 1px solid var(--pista);
+}
+.head{
+  text-align: center;
+  color: var(--orange);
+}
